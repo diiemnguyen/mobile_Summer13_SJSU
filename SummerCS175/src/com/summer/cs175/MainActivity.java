@@ -12,6 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.PopupWindow;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -79,23 +80,22 @@ public class MainActivity extends Activity {
 		View pview = inflater.inflate(R.layout.cust_pop,(ViewGroup)findViewById(R.layout.activity_main));
 		
         TextView text = (TextView) pview.findViewById(R.id.text);
-		text.setText("Excellent !!!");
+		text.setText("\n                              QUESTION 1:\n\n        Do you remember what you dreamed \n        when you wake up?");
 		text.setBackgroundResource(R.drawable.green_rect);
 
-		PopupWindow pw = new PopupWindow(pview, 900, 900, false);
+		PopupWindow pw = new PopupWindow(pview, 900, 1200, false);
         pw.showAtLocation(view, Gravity.CENTER,0,0);
         
-        
-        
 		              //if onclick written here, it gives null pointer exception.
-		            /*ImageButton img=(ImageButton)pview.findViewById(R.id.home);
+		            ImageButton img=(ImageButton)pview.findViewById(R.id.ibut_save);
 		            img.setOnClickListener(new OnClickListener()
 		            {
 		                public void onClick(View v)
 		                {
-		                    Intent.....
+		                	Intent intent = new Intent(v.getContext(), MainActivity.class);
+		                	startActivityForResult(intent, 0);
 		                }
-		            });*/
+		            });
 		
 		
 		
