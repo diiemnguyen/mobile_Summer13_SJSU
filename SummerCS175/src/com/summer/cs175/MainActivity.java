@@ -2,53 +2,68 @@ package com.summer.cs175;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.app.ListActivity;
+import android.content.Context;
+import android.content.Intent;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.PopupWindow;
 import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends Activity {
+	private Button button1;
+	private Button button2;
+	private Button button3;
+	private Button button4;
+	private Button button5;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		
-		final Button button1 = (Button) findViewById(R.id.btn_1);
-        button1.setOnClickListener(new View.OnClickListener() {
+		
+		button1 = (Button) findViewById(R.id.btn_1);
+        button1.setOnClickListener(new OnClickListener() {
+        	@Override
             public void onClick(View v) {
-            	selfDestruct1(v);
+        		selfDestruct1(v);
             }
         });
         
-        final Button button2 = (Button) findViewById(R.id.btn_2);
-        button1.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                // Perform action on click
-            }
-        });
-        
-        final Button button3 = (Button) findViewById(R.id.btn_3);
-        button1.setOnClickListener(new View.OnClickListener() {
+        button2 = (Button) findViewById(R.id.btn_2);
+        button2.setOnClickListener(new OnClickListener() {
+        	@Override
             public void onClick(View v) {
                 // Perform action on click
             }
         });
         
-        final Button button4 = (Button) findViewById(R.id.btn_4);
-        button1.setOnClickListener(new View.OnClickListener() {
+        button3 = (Button) findViewById(R.id.btn_3);
+        button3.setOnClickListener(new OnClickListener() {
+        	@Override
             public void onClick(View v) {
                 // Perform action on click
             }
         });
         
-        final Button button5 = (Button) findViewById(R.id.btn_5);
-        button1.setOnClickListener(new View.OnClickListener() {
+        button4 = (Button) findViewById(R.id.btn_4);
+        button4.setOnClickListener(new OnClickListener() {
+        	@Override
+            public void onClick(View v) {
+                // Perform action on click
+            }
+        });
+        
+        button5 = (Button) findViewById(R.id.btn_5);
+        button5.setOnClickListener(new OnClickListener() {
+        	@Override
             public void onClick(View v) {
                 // Perform action on click
             }
@@ -59,21 +74,32 @@ public class MainActivity extends Activity {
 	}
 	
 	public void selfDestruct1(View view) {
-		LayoutInflater inflater = getLayoutInflater();
-		View layout = inflater.inflate(R.layout.cust_pop,
-		                               (ViewGroup)findViewById(R.id.toast_layout_root));
-
-		TextView text = (TextView) layout.findViewById(R.id.text);
+		final LayoutInflater inflater = (LayoutInflater)this.getSystemService(Context.LAYOUT_INFLATER_SERVICE); 
+		
+		View pview = inflater.inflate(R.layout.cust_pop,(ViewGroup)findViewById(R.layout.activity_main));
+		
+        TextView text = (TextView) pview.findViewById(R.id.text);
 		text.setText("Excellent !!!");
 		text.setBackgroundResource(R.drawable.green_rect);
-		Toast toast = new Toast(getApplicationContext());
-		toast.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
-		toast.setDuration(Toast.LENGTH_SHORT);
-		toast.setView(layout);
-		toast.show();
+
+		PopupWindow pw = new PopupWindow(pview, 900, 900, false);
+        pw.showAtLocation(view, Gravity.CENTER,0,0);
+        
+        
+        
+		              //if onclick written here, it gives null pointer exception.
+		            /*ImageButton img=(ImageButton)pview.findViewById(R.id.home);
+		            img.setOnClickListener(new OnClickListener()
+		            {
+		                public void onClick(View v)
+		                {
+		                    Intent.....
+		                }
+		            });*/
 		
-		/*View popupView = inflater.inflate(R.layout.cust_pop,(ViewGroup)findViewById(R.id.toast_layout_root));  
-		final PopupWindow popupWindow = new PopupWindow(popupView, 200, 265, true);*/
+		
+		
+		
 	 }
 
 	@Override
