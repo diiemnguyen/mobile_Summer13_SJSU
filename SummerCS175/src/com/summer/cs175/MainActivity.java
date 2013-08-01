@@ -5,6 +5,8 @@ import android.app.Activity;
 import android.app.ListActivity;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -90,6 +92,7 @@ public class MainActivity extends Activity {
 		            ImageButton img=(ImageButton)pview.findViewById(R.id.ibut_save);
 		            img.setOnClickListener(new OnClickListener()
 		            {
+		            	@Override
 		                public void onClick(View v)
 		                {
 		                	Intent intent = new Intent(v.getContext(), MainActivity.class);

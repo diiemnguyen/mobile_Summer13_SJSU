@@ -6,14 +6,26 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:paddingTop="45dp" >
+    
 
-    <TextView android:id="@+id/text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@android:color/white"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        android:gravity="center"
-        android:paddingTop="200dp"/>
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="300dp"
+        android:layout_height="310dp"
+        android:layout_marginTop="240dp"
+        android:layout_marginLeft="30dp"
+        android:textColor="@android:color/black"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+    
+    <ImageButton 
+        android:id="@+id/ibut_save" 
+        android:src="@drawable/ic_launcher"
+        android:layout_width="24dip"
+        android:layout_height="20dip"
+        android:layout_marginTop="500dp"
+        android:layout_marginLeft="60dp" 
+        android:onClick="onClick" 
+        android:contentDescription="@drawable/ic_launcher"/>
 
 </LinearLayout>
