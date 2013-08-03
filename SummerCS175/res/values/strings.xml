@@ -7,6 +7,6 @@
     <string name="text_3">3</string>
     <string name="text_4">4</string>
     <string name="text_5">5</string>
-    <string name="toast_layout_root">Question</string>
-    
+    <string name="save">save</string>
+    <string name="cancel">cancel</string>
 </resources>

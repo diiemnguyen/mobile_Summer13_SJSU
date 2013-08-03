@@ -81,16 +81,29 @@ public class MainActivity extends Activity {
 		
 		View pview = inflater.inflate(R.layout.cust_pop,(ViewGroup)findViewById(R.layout.activity_main));
 		
-        TextView text = (TextView) pview.findViewById(R.id.text);
-		text.setText("\n                              QUESTION 1:\n\n        Do you remember what you dreamed \n        when you wake up?");
-		text.setBackgroundResource(R.drawable.green_rect);
-
-		PopupWindow pw = new PopupWindow(pview, 900, 1200, false);
-        pw.showAtLocation(view, Gravity.CENTER,0,0);
+        TextView txtNum = (TextView) pview.findViewById(R.id.textNumber);
+		txtNum.setText("\nQUESTION 1:");
+		
+		TextView txtQuestion = (TextView) pview.findViewById(R.id.textQuestion);
+		txtQuestion.setText("What is Android?");
+		
+		PopupWindow pw = new PopupWindow(pview, 500, 700, false);
+        pw.showAtLocation(view, Gravity.CENTER,0,-120);
         
 		              //if onclick written here, it gives null pointer exception.
-		            ImageButton img=(ImageButton)pview.findViewById(R.id.ibut_save);
-		            img.setOnClickListener(new OnClickListener()
+		            Button save = (Button)pview.findViewById(R.id.btn_save);
+		            save.setOnClickListener(new OnClickListener()
+		            {
+		            	@Override
+		                public void onClick(View v)
+		                {
+		                	Intent intent = new Intent(v.getContext(), MainActivity.class);
+		                	startActivityForResult(intent, 0);
+		                }
+		            });
+		            
+		            Button cancel = (Button)pview.findViewById(R.id.btn_cancel);
+		            cancel.setOnClickListener(new OnClickListener()
 		            {
 		            	@Override
 		                public void onClick(View v)
