@@ -9,4 +9,41 @@
     <string name="text_5">5</string>
     <string name="save">save</string>
     <string name="cancel">cancel</string>
+    
+    <string name="questionNum1">QUESTION 1</string>
+    <string name="questionNum2">QUESTION 2</string>
+    <string name="questionNum3">QUESTION 3</string>
+    <string name="questionNum4">QUESTION 4</string>
+    <string name="questionNum5">QUESTION 5</string>
+    
+    <string name="question1">What is Android?</string>
+    <string name="answer1_1">Mobile OS</string>
+    <string name="answer1_2">Mac Apple OS</string>
+    <string name="answer1_3">MS windows</string>
+    <string name="answer1_4">Cygwin</string>
+    
+    <string name="question2">Creator of Android:</string>
+    <string name="answer2_1">Bill Gates</string>
+    <string name="answer2_2">Andy Rubin</string>
+    <string name="answer2_3">Steve Jobs</string>
+    <string name="answer2_4">Larry Ellison</string>
+    
+    <string name="question3">Competitors of Android:</string>
+    <string name="answer3_1">Oracle</string>
+    <string name="answer3_2">Apple</string>
+    <string name="answer3_3">Sprint</string>
+    <string name="answer3_4">ATT </string>
+    
+    <string name="question4">Android’s unique  feature:</string>
+    <string name="answer4_1">Java Language</string>
+    <string name="answer4_2">Easy to use</string>
+    <string name="answer4_3">Access to Internet</string>
+    <string name="answer4_4">Open Source</string>
+    
+    <string name="question5">The building block of  an Android application?</string>
+    <string name="answer5_1">drawable.*</string>
+    <string name="answer5_2">activity class</string>
+    <string name="answer5_3">R.java</string>
+    <string name="answer5_4">assets folder</string>
+    
 </resources>

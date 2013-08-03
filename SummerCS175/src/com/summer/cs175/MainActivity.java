@@ -7,6 +7,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.util.DisplayMetrics;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -30,7 +31,6 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		
 		
 		button1 = (Button) findViewById(R.id.btn_1);
         button1.setOnClickListener(new OnClickListener() {
@@ -80,12 +80,6 @@ public class MainActivity extends Activity {
 		final LayoutInflater inflater = (LayoutInflater)this.getSystemService(Context.LAYOUT_INFLATER_SERVICE); 
 		
 		View pview = inflater.inflate(R.layout.cust_pop,(ViewGroup)findViewById(R.layout.activity_main));
-		
-        TextView txtNum = (TextView) pview.findViewById(R.id.textNumber);
-		txtNum.setText("\nQUESTION 1:");
-		
-		TextView txtQuestion = (TextView) pview.findViewById(R.id.textQuestion);
-		txtQuestion.setText("What is Android?");
 		
 		PopupWindow pw = new PopupWindow(pview, 500, 700, false);
         pw.showAtLocation(view, Gravity.CENTER,0,-120);
