@@ -44,7 +44,7 @@ public class MainActivity extends Activity {
         button2.setOnClickListener(new OnClickListener() {
         	@Override
             public void onClick(View v) {
-                // Perform action on click
+        		selfDestruct2(v);
             }
         });
         
@@ -52,7 +52,7 @@ public class MainActivity extends Activity {
         button3.setOnClickListener(new OnClickListener() {
         	@Override
             public void onClick(View v) {
-                // Perform action on click
+        		selfDestruct3(v);
             }
         });
         
@@ -60,7 +60,7 @@ public class MainActivity extends Activity {
         button4.setOnClickListener(new OnClickListener() {
         	@Override
             public void onClick(View v) {
-                // Perform action on click
+        		selfDestruct4(v);
             }
         });
         
@@ -68,11 +68,9 @@ public class MainActivity extends Activity {
         button5.setOnClickListener(new OnClickListener() {
         	@Override
             public void onClick(View v) {
-                // Perform action on click
+        		selfDestruct5(v);
             }
         });
-		
-				
 		
 	}
 	
@@ -84,34 +82,158 @@ public class MainActivity extends Activity {
 		PopupWindow pw = new PopupWindow(pview, 500, 700, false);
         pw.showAtLocation(view, Gravity.CENTER,0,-120);
         
-		              //if onclick written here, it gives null pointer exception.
-		            Button save = (Button)pview.findViewById(R.id.btn_save);
-		            save.setOnClickListener(new OnClickListener()
-		            {
-		            	@Override
-		                public void onClick(View v)
-		                {
-		                	Intent intent = new Intent(v.getContext(), MainActivity.class);
-		                	startActivityForResult(intent, 0);
-		                }
-		            });
-		            
-		            Button cancel = (Button)pview.findViewById(R.id.btn_cancel);
-		            cancel.setOnClickListener(new OnClickListener()
-		            {
-		            	@Override
-		                public void onClick(View v)
-		                {
-		                	Intent intent = new Intent(v.getContext(), MainActivity.class);
-		                	startActivityForResult(intent, 0);
-		                }
-		            });
+        //if onclick written here, it gives null pointer exception.
+        Button save = (Button)pview.findViewById(R.id.btn_save);
+        save.setOnClickListener(new OnClickListener()
+        {
+        	@Override
+            public void onClick(View v)
+            {
+            	Intent intent = new Intent(v.getContext(), MainActivity.class);
+            	startActivityForResult(intent, 0);
+            }
+        });
+        
+        Button cancel = (Button)pview.findViewById(R.id.btn_cancel);
+        cancel.setOnClickListener(new OnClickListener()
+        {
+        	@Override
+            public void onClick(View v)
+            {
+            	Intent intent = new Intent(v.getContext(), MainActivity.class);
+            	startActivityForResult(intent, 0);
+            }
+        });
+	 }
+	
+	public void selfDestruct2(View view) {
+		final LayoutInflater inflater = (LayoutInflater)this.getSystemService(Context.LAYOUT_INFLATER_SERVICE); 
 		
+		View pview = inflater.inflate(R.layout.cust_pop2,(ViewGroup)findViewById(R.layout.activity_main));
 		
+		PopupWindow pw = new PopupWindow(pview, 500, 700, false);
+        pw.showAtLocation(view, Gravity.CENTER,0,-120);
+        
+	    //if onclick written here, it gives null pointer exception.
+	    Button save = (Button)pview.findViewById(R.id.btn_save);
+	    save.setOnClickListener(new OnClickListener()
+	    {
+	    	@Override
+	        public void onClick(View v)
+	        {
+	        	Intent intent = new Intent(v.getContext(), MainActivity.class);
+	        	startActivityForResult(intent, 0);
+	        }
+	    });
+	    
+	    Button cancel = (Button)pview.findViewById(R.id.btn_cancel);
+	    cancel.setOnClickListener(new OnClickListener()
+	    {
+	    	@Override
+	        public void onClick(View v)
+	        {
+	        	Intent intent = new Intent(v.getContext(), MainActivity.class);
+	        	startActivityForResult(intent, 0);
+	        }
+	    });
+	 }
+	
+	public void selfDestruct3(View view) {
+		final LayoutInflater inflater = (LayoutInflater)this.getSystemService(Context.LAYOUT_INFLATER_SERVICE); 
 		
+		View pview = inflater.inflate(R.layout.cust_pop3,(ViewGroup)findViewById(R.layout.activity_main));
 		
+		PopupWindow pw = new PopupWindow(pview, 500, 700, false);
+        pw.showAtLocation(view, Gravity.CENTER,0,-120);
+        
+        //if onclick written here, it gives null pointer exception.
+        Button save = (Button)pview.findViewById(R.id.btn_save);
+        save.setOnClickListener(new OnClickListener()
+        {
+        	@Override
+            public void onClick(View v)
+            {
+            	Intent intent = new Intent(v.getContext(), MainActivity.class);
+            	startActivityForResult(intent, 0);
+            }
+        });
+        
+        Button cancel = (Button)pview.findViewById(R.id.btn_cancel);
+        cancel.setOnClickListener(new OnClickListener()
+        {
+        	@Override
+            public void onClick(View v)
+            {
+            	Intent intent = new Intent(v.getContext(), MainActivity.class);
+            	startActivityForResult(intent, 0);
+            }
+        });
 	 }
 
+	public void selfDestruct4(View view) {
+		final LayoutInflater inflater = (LayoutInflater)this.getSystemService(Context.LAYOUT_INFLATER_SERVICE); 
+		
+		View pview = inflater.inflate(R.layout.cust_pop4,(ViewGroup)findViewById(R.layout.activity_main));
+		
+		PopupWindow pw = new PopupWindow(pview, 507, 700, false);
+        pw.showAtLocation(view, Gravity.CENTER,0,-120);
+        
+        //if onclick written here, it gives null pointer exception.
+        Button save = (Button)pview.findViewById(R.id.btn_save);
+        save.setOnClickListener(new OnClickListener()
+        {
+        	@Override
+            public void onClick(View v)
+            {
+            	Intent intent = new Intent(v.getContext(), MainActivity.class);
+            	startActivityForResult(intent, 0);
+            }
+        });
+        
+        Button cancel = (Button)pview.findViewById(R.id.btn_cancel);
+        cancel.setOnClickListener(new OnClickListener()
+        {
+        	@Override
+            public void onClick(View v)
+            {
+            	Intent intent = new Intent(v.getContext(), MainActivity.class);
+            	startActivityForResult(intent, 0);
+            }
+        });
+	}
+	
+	public void selfDestruct5(View view) {
+		final LayoutInflater inflater = (LayoutInflater)this.getSystemService(Context.LAYOUT_INFLATER_SERVICE); 
+		
+		View pview = inflater.inflate(R.layout.cust_pop5,(ViewGroup)findViewById(R.layout.activity_main));
+		
+		PopupWindow pw = new PopupWindow(pview, 500, 700, false);
+        pw.showAtLocation(view, Gravity.CENTER,0,-120);
+        
+        //if onclick written here, it gives null pointer exception.
+        Button save = (Button)pview.findViewById(R.id.btn_save);
+        save.setOnClickListener(new OnClickListener()
+        {
+        	@Override
+            public void onClick(View v)
+            {
+            	Intent intent = new Intent(v.getContext(), MainActivity.class);
+            	startActivityForResult(intent, 0);
+            }
+        });
+        
+        Button cancel = (Button)pview.findViewById(R.id.btn_cancel);
+        cancel.setOnClickListener(new OnClickListener()
+        {
+        	@Override
+            public void onClick(View v)
+            {
+            	Intent intent = new Intent(v.getContext(), MainActivity.class);
+            	startActivityForResult(intent, 0);
+            }
+        });
+	}
+	
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.

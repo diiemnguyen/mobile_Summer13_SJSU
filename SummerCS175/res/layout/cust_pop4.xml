@@ -15,7 +15,7 @@
 	           android:layout_marginTop="10dp"
 	           android:textSize="18sp"
 	           android:textStyle="bold"
-	           android:text="@string/questionNum1" />
+	           android:text="@string/questionNum4" />
 	   </TableRow>
 	   
 	   <TableRow android:layout_height="wrap_content"
@@ -24,42 +24,42 @@
 	       <TextView android:layout_height="wrap_content"
 	           android:layout_width="fill_parent"
 	           android:layout_marginTop="12dp"
-	           android:layout_marginLeft="13dp"
+	           android:layout_marginLeft="2.5dp"
 	           android:textSize="16sp"
 	           android:textStyle="bold"
-	           android:text="@string/question1" />
+	           android:text="@string/question4" />
 	   </TableRow>
     
 	   <TableRow android:layout_height="wrap_content"
 	        android:layout_width="fill_parent"> 
-		     <CheckBox android:id="@+id/check1_1"
+		     <CheckBox android:id="@+id/check4_1"
 			      android:layout_width="wrap_content"
 			      android:layout_height="wrap_content" 
-			      android:text="@string/answer1_1" />
+			      android:text="@string/answer4_1" />
 	   </TableRow>
 	   
 	   <TableRow android:layout_height="wrap_content"
 	        android:layout_width="fill_parent">  
-		     <CheckBox android:id="@+id/check1_2"
+		     <CheckBox android:id="@+id/check4_2"
 			      android:layout_width="wrap_content"
 			      android:layout_height="wrap_content" 
-			      android:text="@string/answer1_2" />
+			      android:text="@string/answer4_2" />
 	   </TableRow> 
 	   
 	   <TableRow android:layout_height="wrap_content"
 	        android:layout_width="fill_parent"> 
-		     <CheckBox android:id="@+id/check1_3"
+		     <CheckBox android:id="@+id/check4_3"
 			      android:layout_width="wrap_content"
 			      android:layout_height="wrap_content" 
-			      android:text="@string/answer1_3"/>
+			      android:text="@string/answer4_3"/>
 	   </TableRow>
 	   
 	   <TableRow android:layout_height="wrap_content"
 	        android:layout_width="fill_parent"> 
-		     <CheckBox android:id="@+id/check1_4"
+		     <CheckBox android:id="@+id/check4_4"
 			      android:layout_width="wrap_content"
 			      android:layout_height="wrap_content" 
-			      android:text="@string/answer1_4"/>
+			      android:text="@string/answer4_4"/>
 	   </TableRow>
 	
 	   <TableRow android:layout_height="wrap_content"
