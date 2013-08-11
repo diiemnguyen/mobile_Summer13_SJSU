@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Microsoft"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/btnDisplay"
+        android:layout_width="196dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:text="@string/btn_display" />
+
+    <RadioGroup
+        android:id="@+id/radioQuestion"
+        android:layout_width="148dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.17" >
+
+        <RadioButton
+            android:id="@+id/Mobile_OS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Moble_Op" />
+
+        <RadioButton
+            android:id="@+id/Mac_OS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mac_OS" />
+
+        <RadioButton
+            android:id="@+id/MS_Win"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ms_Win" />
+
+        <RadioButton
+            android:id="@+id/Cygwin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cygwin" />
+    </RadioGroup>
+
+</LinearLayout>
+

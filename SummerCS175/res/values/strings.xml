@@ -46,4 +46,9 @@
     <string name="answer5_3">R.java</string>
     <string name="answer5_4">assets folder</string>
     
+    <string name="radio_male">Male</string>
+    <string name="radio_female">Female</string>
+    <string name="btn_display">Display</string>
+</resources>
+    
 </resources>
