@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">RadioQuiz2</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="Mobile_OS">Mobile_OS</string>
+    <string name="Mac_OS">Mac_OS</string>
+    <string name="Cygwin">Cygwin</string>
+    <string name="MS_Win">MS_Win</string>
+    <string name="btn_display">What is Android ?</string>
+
+</resources>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Microsoft"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/btnDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:text="@string/btn_display" />
+
+    <RadioGroup
+        android:id="@+id/radioQuestion"
+        android:layout_width="148dp"
+        android:layout_height="190dp" >
+
+        <RadioButton
+            android:id="@+id/Andy_Rubin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:onClick="onRadioButtonClicked"
+            android:text="Andy_Rubin" />
+
+        <RadioButton
+            android:id="@+id/Steve_Jobs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="Steve Job" />
+
+        <RadioButton
+            android:id="@+id/Bill_Gates"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="Bill Gates" />
+
+        <RadioButton
+            android:id="@+id/Larry_Ellison"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="Larry Ellison" />
+
+    </RadioGroup>
+
+</LinearLayout>
